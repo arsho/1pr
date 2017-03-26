@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
 		<title>One PR A Day</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Patua+One">
 		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
-
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>				
 	</head>
 
 	<body>
-
 		<!-- Non-breaking spaces between "pull request" and "this project" so automatic line breaks don't split those up
 			(improves legibility, especially on small devices) -->
 		<h1>I will be accepting up to one pull&nbsp;request per day on <a href="https://github.com/thepracticaldev/1pr">this&nbsp;project</a>.</h1>
@@ -25,8 +24,33 @@
 			</ul>
 
 		</main>
-
-
+		
+<!-- Quote starts -->		
+<div class="container quote">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">Random Quote</h3>
+    </div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+      <div id="res">
+        <blockquote>
+          <p id="quote"></p>
+          <footer>by <cite title="Source Title" id="quote_author"></cite></footer>
+        </blockquote>
+      </div>
+      <!-- /#res -->
+    </div>
+    <!-- /.panel-body -->
+    <div class="panel-footer no-margin-center">
+      <button id="generate_quote" class="btn btn-primary">Try another!</button>
+    </div>
+    <!-- /.panel-footer -->
+  </div>
+  <!-- /.panel -->
+</div>
+<!-- /.container -->
+<!-- Quote ends -->
 		<div id="contributors-container">
 
 			<h4>A project by</h4>
@@ -37,5 +61,6 @@
 		</div>
 
 		<script src="scripts/contributors.js" async></script>
+		<script src="scripts/quote.js" async></script>		
 	</body>
 </html>

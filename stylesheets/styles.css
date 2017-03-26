@@ -123,7 +123,18 @@ h1 {
 }
 
 
-
+/* Random Quote */
+.quote{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.no-margin-center{
+	text-align:center;
+	margin: 0px auto;
+}
+blockquote {
+    margin: 0 0 0px;
+}
 
 
 /* Min-width break to add more padding on wider screens */
